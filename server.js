@@ -4,7 +4,19 @@ const app = express();
 app.set('view-engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index.ejs', { name: 'World' });
+  res.render('index.ejs');
+});
+
+app.get('/login', (req, res) => {
+  res.render('login.ejs');
+});
+
+app.get('/register', (req, res) => {
+  res.render('register.ejs');
+});
+
+app.post('/register', (req, res) => {
+  // post functionality
 });
 
 app.listen(3000);
