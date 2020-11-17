@@ -1,4 +1,7 @@
 <h1>Login</h1>
+<% if (messages.error) { %>
+  <%= messages.error %>
+<% } %>
 <form action="/login" method="POST">
   <ul style="padding: 0; margin: 0; list-style: none;">
     <li>
